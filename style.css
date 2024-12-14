@@ -1,0 +1,76 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "LXGW WenKai TC", sans-serif;
+  letter-spacing: 0.1rem;
+  color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--bg-secondary);
+}
+
+/* variables */
+:root {
+  --text-primary: #1d1002;
+  --text-secondary: #5f3201;
+  --text-tertiary: rgb(255, 255, 255);
+
+  --bg-primary: #dcb57f;
+  --bg-secondary: rgb(255, 249, 235);
+}
+
+/* global */
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+/* header */
+
+header .top {
+  padding: 1rem;
+  background-image: url('./images/background.png');
+}
+
+header .top h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header .top p {
+  font-size: 1.2rem;
+}
+
+nav {
+  background: var(--bg-primary);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+}
+
+nav ul li a {
+  color: var(--text-secondary);
+  transition: all 0.3s ease-out;
+}
+
+nav ul li a:hover {
+  color: var(--text-tertiary);
+}
+
+.active {
+  color: var(--text-tertiary);
+}
