@@ -24,10 +24,10 @@ body {
 /* variables */
 :root {
   --text-primary: #1d1002;
-  --text-secondary: #5f3201;
+  --text-secondary: rgb(95, 50, 1);
   --text-tertiary: rgb(255, 255, 255);
 
-  --bg-primary: #dcb57f;
+  --bg-primary: rgb(220, 181, 127);
   --bg-secondary: rgb(255, 249, 235);
 }
 
@@ -224,7 +224,6 @@ section h2 {
   font-weight: normal;
   font-size: 1.1rem;
 }
-
 
 body {
   display: flex;
