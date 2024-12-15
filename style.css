@@ -45,11 +45,13 @@ header .top {
 }
 
 header .top h1 {
+  color: var(--text-secondary);
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 header .top p {
+  color: var(--text-primary);
   font-size: 1.2rem;
 }
 
@@ -81,13 +83,13 @@ nav ul li a:hover {
 .active {
   color: var(--text-tertiary);
   border-bottom: 3px solid var(--text-tertiary);
-
 }
 
 .container {
   width: 85%;
   margin: auto;
-  padding: 1rem 0;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .flex {
@@ -139,12 +141,14 @@ hr {
   color: var(--text-primary);
 }
 
-.right ul, section ul {
+.right ul,
+section ul {
   list-style-position: outside;
   padding: 0 1.8rem;
 }
 
-.right ul li, section ul li {
+.right ul li,
+section ul li {
   margin: 0.5rem;
   font-size: 1.1rem;
 }
@@ -156,7 +160,9 @@ hr {
   margin: 1.2rem 0;
 }
 
-.card h3, .info, section h2 {
+.card h3,
+.info,
+section h2 {
   color: var(--text-secondary);
 }
 
@@ -172,4 +178,67 @@ hr {
 
 .img-frame img {
   width: 100%;
+}
+
+.compete {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chart {
+  flex: 1 1 300px;
+  /* margin-left: 2rem; */
+  /* margin-bottom: 2rem; */
+  /* padding: 0 1rem; */
+}
+
+.article {
+  flex: 4 1 500px;
+  /* margin-right: 2rem; */
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+#piechart g text {
+  font-size: 1rem;
+}
+
+.teamList {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--text-tertiary);
+}
+
+.teamList th,
+.teamList td {
+  padding: 0.8rem 0.5rem;
+  border-bottom: 1px solid var(--bg-primary);
+}
+
+.teamList thead {
+  background: var(--bg-primary);
+}
+
+.teamList th {
+  color: var(--text-tertiary);
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  padding: 1.5rem;
+  background: var(--bg-primary);
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p {
+  color: var(--text-tertiary);
 }
