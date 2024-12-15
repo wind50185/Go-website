@@ -23,7 +23,7 @@ body {
 
 /* variables */
 :root {
-  --text-primary: #1d1002;
+  --text-primary: rgb(29, 16, 2);
   --text-secondary: rgb(95, 50, 1);
   --text-tertiary: rgb(255, 255, 255);
 
@@ -229,6 +229,21 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 5px;
+  }
+  
+  
+  &::-webkit-scrollbar-track {
+    background: var(--text-tertiary);
+  }
+
+  &::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: var(--text-secondary);
+  }
 }
 
 footer {
